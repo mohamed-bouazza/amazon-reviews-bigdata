@@ -8,10 +8,11 @@ env/
 .env
 *.env
 
-# Données volumineuses
-data/
+# Données trop volumineuses pour GitHub (> 100 MB)
+data/Reviews.csv
+data/train.csv
 
-# Modèle ML binaire
+# Modèle ML binaire (binaire Parquet lourd)
 models/best_model/
 
 # Logs
@@ -25,7 +26,7 @@ __pycache__/
 *.pyd
 *.so
 
-# Django
+# Django (générés automatiquement)
 django_app/db.sqlite3
 django_app/staticfiles/
 
