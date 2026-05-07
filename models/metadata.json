@@ -1,0 +1,14 @@
+{
+  "model_type": "LogisticRegression",
+  "f1_val": 0.83412131037336,
+  "f1_lr": 0.83412131037336,
+  "f1_nb": 0.7895392626025558,
+  "trained_on": "2026-05-05 15:20:10.660193",
+  "num_features": 20000,
+  "train_size": 454763,
+  "balanced_size": 202047,
+  "f1_test": 0.8319527680897161,
+  "acc_test": 0.8077261372831862,
+  "precision_test": 0.8749803325440043,
+  "recall_test": 0.8077261372831862
+}

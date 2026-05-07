@@ -1,0 +1,323 @@
+
+// Mock data for Amazon Fine Food Reviews Sentiment Dashboard
+window.MOCK = {
+  kpi: {
+    totalPredictions: 568454,
+    throughput: 47,
+    f1Score: 82.7,
+    uniqueProducts: 74258,
+    pipelineStatus: 'running', // 'running' | 'stopped' | 'error'
+  },
+
+  // Sentiment distribution (all time)
+  distribution: {
+    positive: 443777,
+    neutral: 68214,
+    negative: 56463,
+  },
+
+  // Yearly aggregation for "All time" view
+  yearlyTrend: [
+    { year: '2007', positive: 8200,  neutral: 1400, negative: 1100 },
+    { year: '2008', positive: 24600, neutral: 4100, negative: 3200 },
+    { year: '2009', positive: 38900, neutral: 6400, negative: 5000 },
+    { year: '2010', positive: 71200, neutral: 11500, negative: 8900 },
+    { year: '2011', positive: 142800, neutral: 22400, negative: 17600 },
+    { year: '2012', positive: 158077, neutral: 22414, negative: 20663 },
+  ],
+
+  // Monthly breakdown per year
+  monthlyTrend: {
+    2007: [
+      { month: 'Jan', positive: 310, neutral: 52, negative: 41 },
+      { month: 'Feb', positive: 420, neutral: 71, negative: 55 },
+      { month: 'Mar', positive: 590, neutral: 100, negative: 78 },
+      { month: 'Apr', positive: 680, neutral: 115, negative: 90 },
+      { month: 'May', positive: 740, neutral: 126, negative: 98 },
+      { month: 'Jun', positive: 810, neutral: 138, negative: 107 },
+      { month: 'Jul', positive: 870, neutral: 148, negative: 115 },
+      { month: 'Aug', positive: 920, neutral: 156, negative: 121 },
+      { month: 'Sep', positive: 870, neutral: 148, negative: 115 },
+      { month: 'Oct', positive: 930, neutral: 158, negative: 123 },
+      { month: 'Nov', positive: 1040, neutral: 177, negative: 138 },
+      { month: 'Dec', positive: 1020, neutral: 174, negative: 134 },
+    ],
+    2008: [
+      { month: 'Jan', positive: 1200, neutral: 200, negative: 156 },
+      { month: 'Feb', positive: 1450, neutral: 242, negative: 188 },
+      { month: 'Mar', positive: 1700, neutral: 283, negative: 221 },
+      { month: 'Apr', positive: 1900, neutral: 317, negative: 247 },
+      { month: 'May', positive: 2200, neutral: 367, negative: 285 },
+      { month: 'Jun', positive: 2400, neutral: 400, negative: 311 },
+      { month: 'Jul', positive: 2600, neutral: 433, negative: 337 },
+      { month: 'Aug', positive: 2800, neutral: 467, negative: 363 },
+      { month: 'Sep', positive: 2700, neutral: 450, negative: 350 },
+      { month: 'Oct', positive: 2900, neutral: 483, negative: 376 },
+      { month: 'Nov', positive: 3200, neutral: 533, negative: 415 },
+      { month: 'Dec', positive: 3550, neutral: 592, negative: 461 },
+    ],
+    2009: [
+      { month: 'Jan', positive: 2400, neutral: 400, negative: 311 },
+      { month: 'Feb', positive: 2800, neutral: 467, negative: 363 },
+      { month: 'Mar', positive: 3200, neutral: 533, negative: 415 },
+      { month: 'Apr', positive: 3500, neutral: 583, negative: 454 },
+      { month: 'May', positive: 3800, neutral: 633, negative: 493 },
+      { month: 'Jun', positive: 3600, neutral: 600, negative: 467 },
+      { month: 'Jul', positive: 3900, neutral: 650, negative: 506 },
+      { month: 'Aug', positive: 4200, neutral: 700, negative: 545 },
+      { month: 'Sep', positive: 3800, neutral: 633, negative: 493 },
+      { month: 'Oct', positive: 4100, neutral: 683, negative: 532 },
+      { month: 'Nov', positive: 4600, neutral: 767, negative: 597 },
+      { month: 'Dec', positive: 3500, neutral: 583, negative: 454 },
+    ],
+    2010: [
+      { month: 'Jan', positive: 4500, neutral: 750, negative: 584 },
+      { month: 'Feb', positive: 5200, neutral: 867, negative: 675 },
+      { month: 'Mar', positive: 5800, neutral: 967, negative: 753 },
+      { month: 'Apr', positive: 6200, neutral: 1033, negative: 805 },
+      { month: 'May', positive: 6600, neutral: 1100, negative: 857 },
+      { month: 'Jun', positive: 6100, neutral: 1017, negative: 792 },
+      { month: 'Jul', positive: 6400, neutral: 1067, negative: 831 },
+      { month: 'Aug', positive: 6800, neutral: 1133, negative: 883 },
+      { month: 'Sep', positive: 6200, neutral: 1033, negative: 805 },
+      { month: 'Oct', positive: 6700, neutral: 1117, negative: 870 },
+      { month: 'Nov', positive: 7500, neutral: 1250, negative: 974 },
+      { month: 'Dec', positive: 7200, neutral: 1200, negative: 935 },
+    ],
+    2011: [
+      { month: 'Jan', positive: 9100, neutral: 1517, negative: 1182 },
+      { month: 'Feb', positive: 10200, neutral: 1700, negative: 1324 },
+      { month: 'Mar', positive: 11800, neutral: 1967, negative: 1532 },
+      { month: 'Apr', positive: 12600, neutral: 2100, negative: 1636 },
+      { month: 'May', positive: 13200, neutral: 2200, negative: 1714 },
+      { month: 'Jun', positive: 12800, neutral: 2133, negative: 1662 },
+      { month: 'Jul', positive: 13500, neutral: 2250, negative: 1753 },
+      { month: 'Aug', positive: 14200, neutral: 2367, negative: 1844 },
+      { month: 'Sep', positive: 12900, neutral: 2150, negative: 1675 },
+      { month: 'Oct', positive: 13800, neutral: 2300, negative: 1792 },
+      { month: 'Nov', positive: 15600, neutral: 2600, negative: 2026 },
+      { month: 'Dec', positive: 13100, neutral: 2183, negative: 1701 },
+    ],
+    2012: [
+      { month: 'Jan', positive: 14200, neutral: 2367, negative: 1844 },
+      { month: 'Feb', positive: 15800, neutral: 2633, negative: 2052 },
+      { month: 'Mar', positive: 18200, neutral: 3033, negative: 2364 },
+      { month: 'Apr', positive: 20100, neutral: 3350, negative: 2610 },
+      { month: 'May', positive: 21500, neutral: 3583, negative: 2792 },
+      { month: 'Jun', positive: 14800, neutral: 2467, negative: 1922 },
+      { month: 'Jul', positive: 13200, neutral: 2200, negative: 1714 },
+      { month: 'Aug', positive: 12600, neutral: 2100, negative: 1636 },
+      { month: 'Sep', positive: 11800, neutral: 1967, negative: 1532 },
+      { month: 'Oct', positive: 8500, neutral: 1417, negative: 1104 },
+      { month: 'Nov', positive: 7200, neutral: 1200, negative: 935 },
+      { month: 'Dec', positive: 10177, neutral: 1697, negative: 1322 },
+    ],
+  },
+
+  // Top products (negative)
+  topNegativeProducts: [
+    { id: 'B007JFMH8M', count: 1243 },
+    { id: 'B001EO5QW8', count: 1087 },
+    { id: 'B003B3OOPA', count: 978 },
+    { id: 'B00008JS2T', count: 856 },
+    { id: 'B001JKOL4C', count: 791 },
+    { id: 'B000LKTTTW', count: 734 },
+    { id: 'B001GVIEHE', count: 689 },
+    { id: 'B003B3OOPC', count: 623 },
+    { id: 'B0019CXN1I', count: 578 },
+    { id: 'B001EO5QW9', count: 512 },
+  ],
+
+  // Top products (positive)
+  topPositiveProducts: [
+    { id: 'B001E4KFG0', count: 8943 },
+    { id: 'B003B3OOPA', count: 7821 },
+    { id: 'B007JFMH8M', count: 7234 },
+    { id: 'B006F2NYI2', count: 6891 },
+    { id: 'B001JKOL4D', count: 6432 },
+    { id: 'B000LKTTTU', count: 5987 },
+    { id: 'B001GVIEHI', count: 5678 },
+    { id: 'B003B3OOPD', count: 5234 },
+    { id: 'B0019CXN1J', count: 4987 },
+    { id: 'B001E4KFG1', count: 4756 },
+  ],
+
+  // Heatmap data: 7 days x 24 hours
+  heatmap: Array.from({length: 7}, (_, d) =>
+    Array.from({length: 24}, (_, h) => ({
+      day: d, hour: h,
+      count: Math.floor(Math.random() * 800 + 50),
+      positive: Math.floor(Math.random() * 500 + 30),
+      neutral: Math.floor(Math.random() * 150 + 10),
+      negative: Math.floor(Math.random() * 120 + 10),
+    }))
+  ),
+
+  // Confusion matrix (3x3): rows=True [Negative, Neutral, Positive], cols=Predicted [Negative, Neutral, Positive]
+  confusionMatrix: [
+    [6235,  621,  1348],
+    [ 631, 2729,   904],
+    [1127, 1896, 41355],
+  ],
+
+  // Confidence histogram bins
+  confidenceHistogram: {
+    bins: [0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95],
+    positive: [1200, 2100, 4300, 7800, 12400, 18900, 28700, 42100, 67300, 156800],
+    neutral:  [800,  1400, 2800, 4200, 6100,  8700,  11200, 14300, 18600, 9200],
+    negative: [700,  1200, 2400, 3800, 5400,  7600,  9800,  12400, 15200, 7100],
+  },
+
+  // Word cloud data
+  wordCloud: {
+    positive: [
+      {text:'delicious',size:42}, {text:'great',size:38}, {text:'love',size:36},
+      {text:'amazing',size:34}, {text:'perfect',size:32}, {text:'excellent',size:30},
+      {text:'wonderful',size:28}, {text:'recommend',size:26}, {text:'tasty',size:24},
+      {text:'fresh',size:22}, {text:'quality',size:20}, {text:'best',size:20},
+      {text:'favorite',size:18}, {text:'healthy',size:16}, {text:'natural',size:16},
+    ],
+    neutral: [
+      {text:'okay',size:38}, {text:'average',size:34}, {text:'decent',size:32},
+      {text:'alright',size:30}, {text:'fine',size:28}, {text:'expected',size:24},
+      {text:'nothing',size:22}, {text:'special',size:22}, {text:'works',size:20},
+      {text:'price',size:18}, {text:'value',size:18}, {text:'shipping',size:16},
+    ],
+    negative: [
+      {text:'terrible',size:40}, {text:'awful',size:36}, {text:'bad',size:34},
+      {text:'stale',size:32}, {text:'disgusting',size:30}, {text:'waste',size:28},
+      {text:'horrible',size:26}, {text:'never',size:24}, {text:'disappointed',size:22},
+      {text:'return',size:20}, {text:'refund',size:18}, {text:'expired',size:18},
+    ],
+  },
+
+  // Recent predictions table
+  recentPredictions: [
+    { id: 138001, productId: 'B001E4KFG0', userId: 'A1NQ3QDWN1BKFT', summary: 'Excellent product!', text: 'This is the best coffee I have ever tasted. Rich flavor, fresh aroma. Will definitely buy again.', time: '2012-10-25', sentiment: 'positive', confidence: 0.94, trueSentiment: 2 },
+    { id: 245892, productId: 'B007JFMH8M', userId: 'A2SUAM1J3GNN3B', summary: 'Terrible experience', text: 'Completely stale and tasteless. Waste of money. The package was damaged and product smelled off.', time: '2012-09-14', sentiment: 'negative', confidence: 0.91, trueSentiment: 0 },
+    { id: 312456, productId: 'B003B3OOPA', userId: 'A3SGXH7AUHU8GW', summary: 'Pretty good overall', text: 'Nothing special but does the job. Price is fair for the quantity. Packaging could be better.', time: '2012-08-07', sentiment: 'neutral', confidence: 0.76, trueSentiment: 1 },
+    { id: 401237, productId: 'B006F2NYI2', userId: 'A1D87F6ZCVE5NK', summary: 'Love this tea!', text: 'Absolutely wonderful green tea. The flavor is subtle and calming. Perfect for morning routines.', time: '2012-07-22', sentiment: 'positive', confidence: 0.88, trueSentiment: 2 },
+    { id: 502198, productId: 'B001JKOL4C', userId: 'AFZWTMKZGMG2D', summary: 'Not worth it', text: 'Expected much better quality for the price. Taste is mediocre at best. Probably wont reorder.', time: '2012-06-30', sentiment: 'negative', confidence: 0.83, trueSentiment: 0 },
+    { id: 618745, productId: 'B000LKTTTW', userId: 'A2IVT4NFNVV7XF', summary: 'Good value', text: 'Reasonable price for what you get. Quality is acceptable. I have had better but also much worse.', time: '2012-05-18', sentiment: 'neutral', confidence: 0.71, trueSentiment: 1 },
+    { id: 724891, productId: 'B001GVIEHE', userId: 'A1DKPBZUQ7YRGZ', summary: 'Highly recommend!', text: 'Outstanding flavor and freshness. You can really taste the quality ingredients. Perfect gift idea.', time: '2012-04-09', sentiment: 'positive', confidence: 0.97, trueSentiment: 2 },
+    { id: 836201, productId: 'B0019CXN1I', userId: 'A3JVPB2EDAFLWG', summary: 'Disappointingly bad', text: 'The product arrived damaged and smelled stale. Customer service was unhelpful. Avoid this seller.', time: '2012-03-14', sentiment: 'negative', confidence: 0.89, trueSentiment: 0 },
+    { id: 945123, productId: 'B001E4KFG1', userId: 'A2MWC78NKPJHFG', summary: 'Just okay', text: 'Average product. Nothing that stands out particularly. I might try a different brand next time.', time: '2012-02-28', sentiment: 'neutral', confidence: 0.67, trueSentiment: 1 },
+    { id: 1023456, productId: 'B003B3OOPD', userId: 'AFXENCU3ZERJIO', summary: 'Delightful!', text: 'Superb quality and taste. This has become a staple in my household. Everyone in family loves it.', time: '2012-01-11', sentiment: 'positive', confidence: 0.96, trueSentiment: 2 },
+    { id: 1134567, productId: 'B006F2NYI2', userId: 'A2QN3GNJ6SMDFD', summary: 'Meh', text: 'Not impressed. Does what it should but nothing more. Acceptable for the price point I suppose.', time: '2011-12-05', sentiment: 'neutral', confidence: 0.62, trueSentiment: 1 },
+    { id: 1245678, productId: 'B007JFMH8M', userId: 'A1TF3DKQGLXK5T', summary: 'Fantastic flavor', text: 'Really love this product. The taste is complex and satisfying. Great packaging too keeps fresh.', time: '2011-11-17', sentiment: 'positive', confidence: 0.92, trueSentiment: 2 },
+    { id: 1356789, productId: 'B001E4KFG0', userId: 'AMEVO2ZJHO3NL', summary: 'Would not buy again', text: 'Overpriced for what you get. Quality has gone down since I last ordered. Very disappointed overall.', time: '2011-10-28', sentiment: 'negative', confidence: 0.85, trueSentiment: 0 },
+    { id: 1467890, productId: 'B003B3OOPA', userId: 'A2JVPB2EDAFLWG', summary: 'Nice but pricey', text: 'Good quality product but the cost feels a bit steep. Taste is pleasant enough for occasional treats.', time: '2011-09-15', sentiment: 'neutral', confidence: 0.73, trueSentiment: 1 },
+    { id: 1578901, productId: 'B000LKTTTU', userId: 'A3DKPBZUQ7YRGZ', summary: 'Absolutely amazing', text: 'This exceeded all expectations. Fresh, flavorful, and exactly what was described. Perfect every time!', time: '2011-08-02', sentiment: 'positive', confidence: 0.98, trueSentiment: 2 },
+    { id: 1689012, productId: 'B001JKOL4D', userId: 'A1IVT4NFNVV7XF', summary: 'Garbage product', text: 'Completely inedible. The smell alone was enough to put me off. Returned immediately for full refund.', time: '2011-07-18', sentiment: 'negative', confidence: 0.93, trueSentiment: 0 },
+    { id: 1790123, productId: 'B001GVIEHI', userId: 'AFZWTMKZGMG3D', summary: 'Fine for the price', text: 'Decent enough product. Nothing remarkable but does what it claims. Suitable for everyday use.', time: '2011-06-09', sentiment: 'neutral', confidence: 0.68, trueSentiment: 1 },
+    { id: 1901234, productId: 'B003B3OOPD', userId: 'A1D97F6ZCVE5NK', summary: 'Best purchase ever!', text: 'I have tried dozens of similar products and this is hands down the best. Worth every penny spent.', time: '2011-05-22', sentiment: 'positive', confidence: 0.95, trueSentiment: 2 },
+    { id: 2012345, productId: 'B0019CXN1J', userId: 'A2SUAM1J3GNN4B', summary: 'Tastes like chemicals', text: 'Artificial taste is overwhelming. Nothing like the description. Definitely not natural ingredients.', time: '2011-04-07', sentiment: 'negative', confidence: 0.87, trueSentiment: 0 },
+    { id: 2123456, productId: 'B001E4KFG0', userId: 'A1NQ3QDWN2BKFT', summary: 'Solid choice', text: 'Consistent quality over the years. Nothing flashy but reliably good. My go-to for this category.', time: '2011-03-14', sentiment: 'neutral', confidence: 0.70, trueSentiment: 1 },
+  ],
+
+  // Product detail: B001E4KFG0
+  productDetail: {
+    id: 'B001E4KFG0',
+    totalReviews: 70,
+    positive: 54,
+    neutral: 9,
+    negative: 7,
+    yearlyBreakdown: [
+      { year: '2008', positive: 2, neutral: 0, negative: 0 },
+      { year: '2009', positive: 5, neutral: 1, negative: 0 },
+      { year: '2010', positive: 8, neutral: 1, negative: 1 },
+      { year: '2011', positive: 18, neutral: 3, negative: 2 },
+      { year: '2012', positive: 21, neutral: 4, negative: 4 },
+    ],
+    reviews: [
+      { id: 138001, userId: 'A1NQ3QDWN1BKFT', time: '2012-10-25', summary: 'Excellent product!', text: 'This is the best coffee I have ever tasted. Rich flavor, fresh aroma. Will definitely buy again and again.', sentiment: 'positive', confidence: 0.94, trueSentiment: 2, prediction: 2.0 },
+      { id: 245892, userId: 'A2SUAM1J3GNN3B', time: '2012-09-14', summary: 'Truly outstanding', text: 'I have been buying this for years and the quality has never wavered. Highly recommend to all coffee lovers.', sentiment: 'positive', confidence: 0.97, trueSentiment: 2, prediction: 2.0 },
+      { id: 312456, userId: 'A3SGXH7AUHU8GW', time: '2012-08-07', summary: 'Pretty good', text: 'Nothing special but does the job. Price is fair for the quantity and the taste is agreeable enough.', sentiment: 'neutral', confidence: 0.76, trueSentiment: 1, prediction: 1.0 },
+      { id: 401237, userId: 'A1D87F6ZCVE5NK', time: '2012-07-22', summary: 'Disappointing', text: 'Expected much better. The product arrived stale and the flavor was nowhere near what was described online.', sentiment: 'negative', confidence: 0.88, trueSentiment: 0, prediction: 0.0 },
+      { id: 502198, userId: 'AFZWTMKZGMG2D', time: '2012-06-30', summary: 'Great gift!', text: 'Bought this as a gift. The recipient loved it. Beautiful packaging and wonderful taste. Would buy again.', sentiment: 'positive', confidence: 0.93, trueSentiment: 2, prediction: 2.0 },
+      { id: 618745, userId: 'A2IVT4NFNVV7XF', time: '2012-05-18', summary: 'Acceptable', text: 'Product is what it claims to be. No more, no less. Quality is consistent with the price range offered.', sentiment: 'neutral', confidence: 0.71, trueSentiment: 1, prediction: 1.0 },
+      { id: 724891, userId: 'A1DKPBZUQ7YRGZ', time: '2011-12-15', summary: 'Must have!', text: 'This has completely replaced my previous brand. The flavor complexity is unmatched in this price bracket.', sentiment: 'positive', confidence: 0.96, trueSentiment: 2, prediction: 2.0 },
+    ],
+  },
+
+  // Live feed mock reviews
+  liveFeedReviews: [
+    { id: 'LF001', productId: 'B001E4KFG0', userId: 'A1NQ3QDWN1BKFT', summary: 'Amazing quality!', text: 'This is hands down the best product I have ordered. Fresh, flavorful and well packaged.', time: '2012-05-14', sentiment: 'positive', confidence: 0.94 },
+    { id: 'LF002', productId: 'B007JFMH8M', userId: 'A2SUAM1J3GNN3B', summary: 'Terrible, avoid!', text: 'Completely stale product on arrival. Packaging was damaged and smell was off. Total waste of money.', time: '2011-08-22', sentiment: 'negative', confidence: 0.91 },
+    { id: 'LF003', productId: 'B003B3OOPA', userId: 'A3SGXH7AUHU8GW', summary: 'Decent product', text: 'Nothing that stands out but does the job adequately. Reasonable value for what you pay.', time: '2010-03-17', sentiment: 'neutral', confidence: 0.76 },
+    { id: 'LF004', productId: 'B006F2NYI2', userId: 'A1D87F6ZCVE5NK', summary: 'Absolutely love it', text: 'Perfect flavor and wonderful aroma every morning. This has become my daily essential without question.', time: '2012-01-09', sentiment: 'positive', confidence: 0.98 },
+    { id: 'LF005', productId: 'B001JKOL4C', userId: 'AFZWTMKZGMG2D', summary: 'Not recommended', text: 'Below average quality for a premium price. Expected much better based on the glowing reviews online.', time: '2009-11-30', sentiment: 'negative', confidence: 0.83 },
+    { id: 'LF006', productId: 'B000LKTTTW', userId: 'A2IVT4NFNVV7XF', summary: 'Fairly good', text: 'Average product overall. Acceptable taste and quality. I have had better and also worse at this price.', time: '2011-04-12', sentiment: 'neutral', confidence: 0.69 },
+    { id: 'LF007', productId: 'B001GVIEHE', userId: 'A1DKPBZUQ7YRGZ', summary: 'Phenomenal!', text: 'Every single batch has been perfect. Consistent high quality that keeps me coming back repeatedly.', time: '2012-09-05', sentiment: 'positive', confidence: 0.97 },
+    { id: 'LF008', productId: 'B0019CXN1I', userId: 'A3JVPB2EDAFLWG', summary: 'Pure garbage', text: 'Arrived broken. Complete waste of my time and money. Never ordering from this vendor again ever.', time: '2010-07-28', sentiment: 'negative', confidence: 0.89 },
+  ],
+
+  // Pipeline control mock
+  pipeline: {
+    status: 'running',
+    producer: { pid: 12847, uptime: '2h 34m 12s', messagesSent: 568454 },
+    sparkConsumer: { pid: 12901, uptime: '2h 33m 58s', batchesProcessed: 5684 },
+    producerLogs: [
+      '[2012-10-26 14:32:01] INFO  Producer started on topic: amazon_reviews',
+      '[2012-10-26 14:32:02] INFO  Connected to Kafka broker: localhost:9092',
+      '[2012-10-26 14:32:03] INFO  Loaded 568454 reviews from MongoDB',
+      '[2012-10-26 14:32:05] INFO  Sending batch 1/5685 (100 messages)',
+      '[2012-10-26 14:32:06] INFO  Batch 1 sent: 100 messages in 123ms',
+      '[2012-10-26 14:32:07] INFO  Sending batch 2/5685 (100 messages)',
+      '[2012-10-26 14:32:08] INFO  Batch 2 sent: 100 messages in 118ms',
+      '[2012-10-26 14:32:09] INFO  Sending batch 3/5685 (100 messages)',
+      '[2012-10-26 14:32:10] INFO  Batch 3 sent: 100 messages in 131ms',
+      '[2012-10-26 14:32:15] INFO  Throughput: 47 msg/sec',
+      '[2012-10-26 14:32:20] INFO  Sending batch 50/5685 (100 messages)',
+      '[2012-10-26 14:32:21] INFO  Batch 50 sent: 100 messages in 109ms',
+      '[2012-10-26 14:33:00] INFO  Checkpoint: 3000 messages sent',
+      '[2012-10-26 14:34:00] INFO  Checkpoint: 6000 messages sent',
+      '[2012-10-26 14:35:00] INFO  Checkpoint: 9000 messages sent',
+      '[2012-10-26 15:00:00] INFO  Checkpoint: 56000 messages sent',
+      '[2012-10-26 15:30:00] INFO  Checkpoint: 140000 messages sent',
+      '[2012-10-26 16:00:00] INFO  Checkpoint: 280000 messages sent',
+      '[2012-10-26 16:30:00] INFO  Checkpoint: 420000 messages sent',
+      '[2012-10-26 16:45:30] INFO  Checkpoint: 500000 messages sent',
+      '[2012-10-26 17:06:13] INFO  Sending batch 5684/5685 (100 messages)',
+      '[2012-10-26 17:06:13] INFO  Batch 5684 sent: 100 messages in 115ms',
+      '[2012-10-26 17:06:14] INFO  Sending batch 5685/5685 (54 messages)',
+      '[2012-10-26 17:06:14] INFO  Batch 5685 sent: 54 messages in 88ms',
+      '[2012-10-26 17:06:14] INFO  All 568454 messages sent successfully',
+    ],
+    sparkLogs: [
+      '[2012-10-26 14:32:10] INFO  SparkConsumer started',
+      '[2012-10-26 14:32:11] INFO  Connected to Kafka: localhost:9092',
+      '[2012-10-26 14:32:11] INFO  Loading TF-IDF vectorizer from disk',
+      '[2012-10-26 14:32:12] INFO  Loading LogReg model from disk',
+      '[2012-10-26 14:32:13] INFO  Model loaded: LogReg TF-IDF (F1=0.827)',
+      '[2012-10-26 14:32:14] INFO  Streaming context started, batch interval: 10s',
+      '[2012-10-26 14:32:24] INFO  Processing batch #1: 47 records',
+      '[2012-10-26 14:32:24] INFO  Batch #1 predictions: pos=38 neu=5 neg=4',
+      '[2012-10-26 14:32:24] INFO  Batch #1 written to MongoDB (47 docs)',
+      '[2012-10-26 14:32:34] INFO  Processing batch #2: 52 records',
+      '[2012-10-26 14:32:34] INFO  Batch #2 predictions: pos=41 neu=6 neg=5',
+      '[2012-10-26 14:32:34] INFO  Batch #2 written to MongoDB (52 docs)',
+      '[2012-10-26 14:32:44] INFO  Processing batch #3: 49 records',
+      '[2012-10-26 14:32:44] INFO  Batch #3 predictions: pos=39 neu=5 neg=5',
+      '[2012-10-26 14:32:44] INFO  Batch #3 written to MongoDB (49 docs)',
+      '[2012-10-26 14:33:00] INFO  Throughput: 47.3 records/sec avg',
+      '[2012-10-26 15:00:00] WARN  Batch #158: 2 records with low confidence (<0.5)',
+      '[2012-10-26 15:30:00] INFO  Checkpoint saved: 5000 batches processed',
+      '[2012-10-26 16:00:00] INFO  Running stats: pos=78.1% neu=12.0% neg=9.9%',
+      '[2012-10-26 16:30:00] INFO  Memory usage: 2.1GB / 8GB',
+      '[2012-10-26 17:06:13] INFO  Processing batch #5684: 47 records',
+      '[2012-10-26 17:06:14] INFO  Batch #5684 written to MongoDB',
+      '[2012-10-26 17:06:14] INFO  Processing batch #5685: 54 records',
+      '[2012-10-26 17:06:14] INFO  Batch #5685 written to MongoDB',
+      '[2012-10-26 17:06:14] INFO  Stream complete. Total: 568454 records processed',
+      '[2012-10-26 17:06:14] INFO  Final distribution: pos=443777 neu=68214 neg=56463',
+    ],
+  },
+
+  // Saved dashboards
+  savedDashboards: [
+    { id: 1, title: 'All products 2011', filters: { year: '2011', sentiment: 'All' }, lastViewed: '2026-04-28', count: 182800 },
+    { id: 2, title: 'Top 10 negative products', filters: { sentiment: 'Negative' }, lastViewed: '2026-04-27', count: 56463 },
+    { id: 3, title: 'Product B001E4KFG0 deep dive', filters: { productId: 'B001E4KFG0' }, lastViewed: '2026-04-26', count: 70 },
+  ],
+};

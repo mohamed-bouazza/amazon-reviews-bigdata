@@ -1,0 +1,12 @@
+{
+  "total": 568454,
+  "train": 454763,
+  "val": 56845,
+  "test": 56846,
+  "classes": {
+    "negative": 82037,
+    "neutral": 42640,
+    "positive": 443777
+  },
+  "avg_cleaned_len": 275.00814313911064
+}

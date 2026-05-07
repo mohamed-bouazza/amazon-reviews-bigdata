@@ -1,0 +1,53 @@
+# Environnements Python
+venv/
+.venv/
+.venv-1/
+env/
+
+# Secrets
+.env
+*.env
+
+# Données volumineuses
+data/
+
+# Modèle ML binaire
+models/best_model/
+
+# Logs
+django_app/logs/
+*.log
+
+# Cache Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Django
+django_app/db.sqlite3
+django_app/staticfiles/
+
+# Jupyter
+.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+*Zone.Identifier
+
+# Archives
+*.zip
+*.tar.gz
+
+# Spark checkpoints
+spark-warehouse/
+
+# IDE
+.vscode/
+.idea/
+
+# Claude / IA
+.claude/

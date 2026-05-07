@@ -1,0 +1,85 @@
+/* ─── SentimentIQ theme — extracted from frontend index.html ─── */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html, body, #root { height: 100%; }
+
+:root {
+  --bg-base:       #0F172A;
+  --bg-main:       #0B1120;
+  --bg-card:       #1E293B;
+  --bg-card2:      #0F172A;
+  --bg-input:      #1E293B;
+  --border:        #334155;
+  --border2:       #1E293B;
+  --text-primary:  #F1F5F9;
+  --text-secondary:#94A3B8;
+  --text-muted:    #64748B;
+  --text-faint:    #475569;
+  --sidebar-bg:    #0F172A;
+  --topbar-bg:     #0F172A;
+  --scrollbar:     #334155;
+  --scrollbar-h:   #475569;
+  --log-bg:        #070F1A;
+}
+
+.theme-light {
+  --bg-base:       #FAFAFA;
+  --bg-main:       #F1F5F9;
+  --bg-card:       #FFFFFF;
+  --bg-card2:      #F8FAFC;
+  --bg-input:      #F1F5F9;
+  --border:        #E2E8F0;
+  --border2:       #E2E8F0;
+  --text-primary:  #0F172A;
+  --text-secondary:#475569;
+  --text-muted:    #64748B;
+  --text-faint:    #94A3B8;
+  --sidebar-bg:    #1E293B;
+  --topbar-bg:     #FFFFFF;
+  --scrollbar:     #CBD5E1;
+  --scrollbar-h:   #94A3B8;
+  --log-bg:        #0F172A;
+}
+
+body {
+  background: var(--bg-base);
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--scrollbar); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--scrollbar-h); }
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); box-shadow: 0 0 0 0 currentColor; }
+  50% { opacity: 0.8; transform: scale(1.1); }
+}
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position:  200% 0; }
+}
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+input::placeholder { color: #475569; }
+input:focus { border-color: #14B8A6 !important; box-shadow: 0 0 0 3px rgba(20,184,166,0.12); }
+
+.page-enter { animation: fadeIn 0.2s ease; }
