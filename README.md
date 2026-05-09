@@ -382,7 +382,6 @@ GitHub : [@mohamed-bouazza](https://github.com/mohamed-bouazza)
 
 ---
 
-<div align="center">
 
 *Spark 3.5 · Kafka 7.5 · MongoDB 7 · Django 4.2 · React 18.3 · Airflow 2.9 · Docker Compose*
 
