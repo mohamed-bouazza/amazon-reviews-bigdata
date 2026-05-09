@@ -14,6 +14,11 @@
 6. [CHEMIN 2 — Analyses Statistiques (MongoDB → REST API → Dashboard)](#6-chemin-2-stats)
 7. [Frontend — comment le navigateur reçoit et affiche tout](#7-frontend)
 8. [Ce que tu dis au professeur pour chaque partie](#8-discours-prof)
+BOUAZZA Mohamed
+CHICHAOUI Oussama
+EL KAJDOUHI Mohamed Ayman
+EL ATTARI Taki eddine
+
 
 ---
 
