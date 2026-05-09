@@ -256,9 +256,12 @@ PROJECT_ROOT=/abs/path/to/amazon-reviews-bigdata
 
 ---
 
-## 👤 Auteur
+## 👤 Auteurs
 
 **Mohamed Bouazza**  
+**Chichaoui Oussama**
+**El kajdouhi Mohamed Ayman**
+**El Attari Taki Eddine**
 GitHub : [@mohamed-bouazza](https://github.com/mohamed-bouazza)
 
 ---
