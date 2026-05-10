@@ -92,11 +92,15 @@ services:
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: sqlite:////opt/airflow/airflow.db
       AIRFLOW__WEBSERVER__SECRET_KEY: amazon-reviews-secret-2025
       AIRFLOW__SCHEDULER__DAG_DIR_LIST_INTERVAL: '30'
+      AIRFLOW__WEBSERVER__WORKER_TIMEOUT: '300'
+      AIRFLOW__WEBSERVER__WEB_SERVER_MASTER_TIMEOUT: '300'
+      _PIP_ADDITIONAL_REQUIREMENTS: 'pymongo kafka-python'
     volumes:
       - ./airflow/dags:/opt/airflow/dags
       - airflow_logs:/opt/airflow/logs
+      - airflow_db:/opt/airflow
       - /var/run/docker.sock:/var/run/docker.sock
-    command: bash -c 'pip install pymongo --quiet && airflow standalone'
+    command: standalone
     networks:
       - bigdata-net
 
@@ -104,6 +108,7 @@ volumes:
   mongo_data:
   postgres_data:
   airflow_logs:
+  airflow_db:
 
 networks:
   bigdata-net:
